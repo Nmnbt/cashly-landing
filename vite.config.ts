@@ -8,6 +8,9 @@ import { fileURLToPath, URL } from 'node:url'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  preview: {
+    allowedHosts: ['www.cashly.mn', 'cashly.mn'],
+  },
   plugins: [
     devtools(),
     tanstackRouter({
