@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next"
+import { Link } from "@tanstack/react-router"
 
 export function Footer() {
   const { t } = useTranslation()
@@ -10,7 +11,9 @@ export function Footer() {
           {/* Brand */}
           <div className="md:col-span-2">
             <div className="flex items-center gap-3 mb-4">
-              <img src="/white_cashly.png" alt="Cashly Logo" className="h-8 object-contain" />
+              <Link to="/">
+                <img src="/white_cashly.png" alt="Cashly Logo" className="h-8 object-contain cursor-pointer hover:opacity-80 transition-opacity" />
+              </Link>
             </div>
             <p className="text-white/50 text-sm max-w-xs">{t("landing.footer.tagline")}</p>
           </div>
