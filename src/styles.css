@@ -10,6 +10,7 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
+  --color-primary: rgba(221, 252, 18, 1);
   --font-sans: var(--font-sans);
   --font-mono: var(--font-mono);
   --color-success: var(--success);

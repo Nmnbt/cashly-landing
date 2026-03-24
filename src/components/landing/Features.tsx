@@ -43,26 +43,6 @@ export function Features() {
       title: t("landing.features.access247.title"),
       description: t("landing.features.access247.description"),
       delay: "stagger-1"
-    },
-    {
-      icon: (
-        <svg className="w-7 h-7 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
-        </svg>
-      ),
-      title: t("landing.features.noHiddenFees.title"),
-      description: t("landing.features.noHiddenFees.description"),
-      delay: "stagger-2"
-    },
-    {
-      icon: (
-        <svg className="w-7 h-7 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
-        </svg>
-      ),
-      title: t("landing.features.securePrivate.title"),
-      description: t("landing.features.securePrivate.description"),
-      delay: "stagger-3"
     }
   ]
 

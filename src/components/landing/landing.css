@@ -1,7 +1,7 @@
 /* Landing Page Styles */
 
 :root {
-  --primary: rgba(209, 248, 1, 1);
+  --primary: rgba(221, 252, 18, 1);
   --dark: rgba(25, 25, 25, 1);
   --white: #ffffff;
 }
@@ -23,7 +23,7 @@
 }
 
 .gradient-glow {
-  background: radial-gradient(ellipse at 50% 0%, rgba(209, 248, 1, 0.15) 0%, transparent 70%);
+  background: radial-gradient(ellipse at 50% 0%, rgba(221, 252, 18, 0.15) 0%, transparent 70%);
 }
 
 .card-hover {
@@ -32,7 +32,7 @@
 
 .card-hover:hover {
   transform: translateY(-4px);
-  box-shadow: 0 20px 40px rgba(209, 248, 1, 0.1);
+  box-shadow: 0 20px 40px rgba(221, 252, 18, 0.1);
 }
 
 .animate-float {

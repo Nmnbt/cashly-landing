@@ -21,22 +21,13 @@ export function Loyalty() {
       ),
       title: t("landing.loyalty.lowerRates.title"),
       description: t("landing.loyalty.lowerRates.description")
-    },
-    {
-      icon: (
-        <svg className="w-5 h-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
-        </svg>
-      ),
-      title: t("landing.loyalty.vipPerks.title"),
-      description: t("landing.loyalty.vipPerks.description")
     }
   ]
 
-  const rewards = [
-    { emoji: "☕", name: t("landing.loyalty.coffee"), points: 200 },
-    { emoji: "🎧", name: t("landing.loyalty.earbuds"), points: 1500 },
-    { emoji: "📱", name: t("landing.loyalty.phone"), points: 5000 }
+  const rewards: Array<{ emoji: string; name: string; points: number }> = [
+    { emoji: "☕", name: t("landing.loyalty.coffee"), points: 50 },
+    { emoji: "🎧", name: t("landing.loyalty.earbuds"), points: 200 },
+    { emoji: "📱", name: t("landing.loyalty.phone"), points: 1000 }
   ]
 
   return (
@@ -77,7 +68,7 @@ export function Loyalty() {
               <div className="flex items-center justify-between mb-8">
                 <div>
                   <p className="text-white/50 text-sm">{t("landing.loyalty.pointsBalance")}</p>
-                  <p className="text-4xl font-bold text-primary">2,450</p>
+                  <p className="text-4xl font-bold text-primary">20</p>
                 </div>
                 <div className="w-16 h-16 bg-primary rounded-2xl flex items-center justify-center">
                   <span className="text-3xl">🎁</span>

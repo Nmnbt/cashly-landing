@@ -1,120 +1,127 @@
-import { useTranslation } from "react-i18next"
-
 export function PhoneMockup() {
-  const { t } = useTranslation()
-
   return (
     <div className="relative animate-float">
-      {/* Phone Mockup */}
-      <div className="relative mx-auto w-72 h-[580px] bg-gradient-to-b from-white/10 to-white/5 rounded-[3rem] p-3 border border-white/10">
-        <div className="w-full h-full bg-dark rounded-[2.5rem] overflow-hidden relative">
-          {/* Status Bar */}
-          <div className="flex justify-between items-center px-6 py-3">
-            <span className="text-xs text-white/60">9:41</span>
-            <div className="flex items-center gap-1">
-              <svg className="w-4 h-4 text-white/60" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9-4.03-9-9-9z" />
-              </svg>
-              <svg className="w-4 h-4 text-white/60" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M17 4h2v16h-2V4zm-4 4h2v12h-2V8zm-4 4h2v8H9v-8zm-4 4h2v4H5v-4z" />
-              </svg>
-              <div className="w-6 h-3 bg-white/60 rounded-sm"></div>
+      <div className="relative mx-auto w-[330px] h-[715px] rounded-[42px] border border-white/10 bg-gradient-to-b from-white/8 to-white/3 p-[8px] shadow-2xl shadow-black/50">
+        <div className="relative h-full w-full overflow-hidden rounded-[34px] bg-dark text-white">
+          <div className="absolute inset-x-0 top-0 z-20 bg-dark/95 px-4 pt-3 pb-5">
+            <div className="mb-4 flex items-center justify-between text-[11px] font-semibold text-white/90">
+              <span>9:41</span>
+              <div className="flex items-center gap-1">
+                <svg className="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path d="M2 12h20" />
+                  <path d="M12 2v20" />
+                </svg>
+                <svg className="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path d="M3 12h4" />
+                  <path d="M9 9h4" />
+                  <path d="M15 6h4" />
+                </svg>
+                <span className="h-3 w-5 rounded-sm border border-white/40" />
+              </div>
+            </div>
+
+            <div className="flex items-center justify-between">
+              <img src="/white_cashly.png" alt="Cashly Logo" className="h-[20px] w-[63px] object-contain rounded-[5px]" />
+              <div className="flex items-center gap-3 text-[#A1A1A1]">
+                <svg className="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
+                  <path d="M12 4a5 5 0 00-5 5v2.8L5.3 15a1 1 0 00.8 1.6h11.8a1 1 0 00.8-1.6L17 11.8V9a5 5 0 00-5-5z" />
+                  <path d="M9.5 18a2.5 2.5 0 005 0" />
+                </svg>
+                <svg className="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
+                  <circle cx="12" cy="8" r="3.5" />
+                  <path d="M4 20c0-3.4 3.6-6 8-6s8 2.6 8 6" />
+                </svg>
+              </div>
             </div>
           </div>
 
-          {/* App Content */}
-          <div className="px-5 pt-2 space-y-4">
-            {/* Header */}
-            <div className="flex items-center justify-between">
-              <div>
-                <p className="text-xs text-white/50">{t("landing.phone.welcomeBack")}</p>
-                <p className="text-lg font-semibold">{t("landing.phone.userName")}</p>
+          <div className="h-full px-[10px] pb-[118px] pt-[112px]">
+            <div className="space-y-[10px]">
+              <div className="flex h-8 items-center justify-between rounded-[10px] bg-primary px-2 text-[12px] font-semibold text-dark">
+                <span>Таны зээлийн эрхийн мэдээлэл</span>
+                <span>›</span>
               </div>
-              <div className="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center">
-                <span className="text-primary text-sm font-bold">ББ</span>
+
+              <div className="rounded-[10px] bg-[#313234] px-[10px] py-[15px]">
+                <div className="space-y-[15px]">
+                  <div className="flex items-start gap-3">
+                    <div className="flex h-10 w-10 items-center justify-center rounded-[15px] bg-dark">
+                      <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2">
+                        <rect x="3" y="6" width="18" height="12" rx="2" />
+                        <path d="M15 12h3" />
+                        <path d="M7 10h5" />
+                      </svg>
+                    </div>
+                  </div>
+
+                  <div className="flex items-end justify-between gap-3">
+                    <div className="flex-1">
+                      <p className="mb-[5px] text-[12px] font-semibold leading-[14px] text-white">Боломжит эрх:</p>
+                      <p className="text-[28px] font-semibold leading-[30px] tracking-[-0.04em] text-white">1,000,000₮</p>
+                    </div>
+                    <button className="flex h-8 items-center gap-1 rounded-[10px] bg-primary px-2 text-[12px] font-semibold text-dark">
+                      <span>Гэрээ байгуулах</span>
+                      <svg className="h-4 w-4" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="2">
+                        <path d="M7 4l6 6-6 6" />
+                      </svg>
+                    </button>
+                  </div>
+
+                  <div className="flex items-center justify-between text-[10px] leading-3 text-white">
+                    <div className="flex items-center gap-1">
+                      <span className="text-white/80">Нийт эрх:</span>
+                      <span>1,000,000₮</span>
+                    </div>
+                    <div className="flex items-center gap-1">
+                      <span className="text-white/80">Ашигласан эрх:</span>
+                      <span>0₮</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <h3 className="pt-1 text-[16px] font-semibold leading-[19px] text-white">Идэвхитэй зээл</h3>
+
+              <p className="text-[12px] font-semibold leading-[14px] text-white">
+                Таны зээлийн гэрээ энд харагдана. Шинээр зээл авсан тохиолдолд жагсаалт автоматаар шинэчлэгдэнэ.
+              </p>
+
+              <div className="flex gap-[5px] text-[12px] font-semibold leading-[14px]">
+                <button className="h-[34px] rounded-[10px] bg-primary px-[10px] text-dark">Бүгд</button>
+                <button className="h-[34px] rounded-[10px] bg-[#313234] px-[10px] text-[#A1A1A1]">Хэвийн</button>
+                <button className="h-[34px] rounded-[10px] bg-[#313234] px-[10px] text-[#A1A1A1]">Дөхсөн</button>
+                <button className="h-[34px] rounded-[10px] bg-[#313234] px-[10px] text-[#A1A1A1]">Хэтэрсэн</button>
+              </div>
+
+              <div className="flex h-[95px] items-center justify-center rounded-[10px] bg-[#313234] p-[10px] text-center text-[12px] font-semibold leading-[14px] text-[#A1A1A1]">
+                Авсан зээл байхгүй байна
               </div>
             </div>
+          </div>
 
-            {/* Credit Score Card */}
-            <div className="bg-gradient-to-br from-primary/20 to-primary/5 rounded-2xl p-4 border border-primary/20">
-              <p className="text-xs text-white/60 mb-2">{t("landing.phone.creditScore")}</p>
-              <div className="flex items-end gap-3">
-                <span className="text-4xl font-bold text-primary">785</span>
-                <span className="text-xs text-green-400 pb-1">{t("landing.phone.thisMonth")}</span>
-              </div>
-              <div className="mt-3 h-2 bg-white/10 rounded-full overflow-hidden">
-                <div className="h-full w-4/5 bg-primary rounded-full"></div>
-              </div>
-            </div>
+          <div className="absolute inset-x-0 bottom-0 z-20 h-[118px] bg-dark px-[10px] pb-[45px] pt-[10px] shadow-[0_-2px_30px_rgba(0,0,0,0.1)]">
+            <div className="flex h-[63px] items-center justify-between gap-2">
+              <button className="flex h-full flex-1 flex-col items-center justify-center gap-[5px] rounded-[20px] text-[#313234]">
+                <svg className="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
+                  <path d="M3 10.5L12 3l9 7.5" />
+                  <path d="M5 9.5V20h14V9.5" />
+                </svg>
+                <span className="text-[12px] font-semibold">Нүүр</span>
+              </button>
 
-            {/* Quick Actions */}
-            <div className="grid grid-cols-3 gap-2">
-              <div className="bg-white/5 rounded-xl p-3 text-center">
-                <div className="w-8 h-8 bg-primary/20 rounded-lg mx-auto mb-2 flex items-center justify-center">
-                  <svg className="w-4 h-4 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                </div>
-                <span className="text-xs text-white/70">{t("landing.phone.borrow")}</span>
-              </div>
-              <div className="bg-white/5 rounded-xl p-3 text-center">
-                <div className="w-8 h-8 bg-primary/20 rounded-lg mx-auto mb-2 flex items-center justify-center">
-                  <svg className="w-4 h-4 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
-                  </svg>
-                </div>
-                <span className="text-xs text-white/70">{t("landing.phone.history")}</span>
-              </div>
-              <div className="bg-white/5 rounded-xl p-3 text-center">
-                <div className="w-8 h-8 bg-primary/20 rounded-lg mx-auto mb-2 flex items-center justify-center">
-                  <svg className="w-4 h-4 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7" />
-                  </svg>
-                </div>
-                <span className="text-xs text-white/70">{t("landing.phone.rewards")}</span>
-              </div>
-            </div>
+              <button className="flex h-full flex-1 flex-col items-center justify-center gap-[5px] rounded-[20px] bg-[#313234] text-white">
+                <img src="/white_cashly.png" alt="Cashly Logo" className="h-[20px] w-[63px] object-contain rounded-[5px]" />
+                <span className="text-[12px] font-semibold">Зээл</span>
+              </button>
 
-            {/* Available Loan */}
-            <div className="bg-white/5 rounded-2xl p-4">
-              <div className="flex justify-between items-center mb-3">
-                <p className="text-sm text-white/70">{t("landing.phone.availableLoan")}</p>
-                <span className="text-xs bg-primary/20 text-primary px-2 py-1 rounded-full">
-                  {t("landing.phone.preApproved")}
-                </span>
-              </div>
-              <p className="text-2xl font-bold">₮150,000</p>
-              <button className="w-full mt-3 bg-primary text-dark py-2.5 rounded-xl font-semibold text-sm">
-                {t("landing.phone.applyNow")}
+              <button className="flex h-full flex-1 flex-col items-center justify-center gap-[5px] rounded-[20px] text-[#313234]">
+                <svg className="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
+                  <path d="M12 3l2.6 5.2 5.8.9-4.2 4.1 1 5.8L12 16.3 6.8 19l1-5.8L3.6 9.1l5.8-.9L12 3z" />
+                </svg>
+                <span className="text-[12px] font-semibold">Loyalty</span>
               </button>
             </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Floating Elements */}
-      <div className="absolute -right-4 top-20 bg-dark/90 backdrop-blur border border-white/10 rounded-2xl p-4 shadow-xl">
-        <div className="flex items-center gap-3">
-          <div className="w-10 h-10 bg-green-500/20 rounded-full flex items-center justify-center">
-            <svg className="w-5 h-5 text-green-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
-            </svg>
-          </div>
-          <div>
-            <p className="text-xs text-white/50">{t("landing.phone.danVerified")}</p>
-            <p className="text-sm font-semibold">{t("landing.phone.identityConfirmed")}</p>
-          </div>
-        </div>
-      </div>
-
-      <div className="absolute -left-4 bottom-32 bg-dark/90 backdrop-blur border border-white/10 rounded-2xl p-4 shadow-xl">
-        <div className="flex items-center gap-3">
-          <div className="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center">
-            <span className="text-primary font-bold text-sm">🎁</span>
-          </div>
-          <div>
-            <p className="text-xs text-white/50">{t("landing.phone.loyaltyPoints")}</p>
-            <p className="text-sm font-semibold text-primary">2,450 {t("landing.loyalty.pts")}</p>
+            <div className="mx-auto mt-[10px] h-[5px] w-[134px] rounded-[10px] bg-white" />
           </div>
         </div>
       </div>

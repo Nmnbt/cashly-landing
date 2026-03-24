@@ -10,55 +10,22 @@ export function Footer() {
           {/* Brand */}
           <div className="md:col-span-2">
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 bg-primary rounded-xl flex items-center justify-center">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                  <path d="M12 2L2 7L12 12L22 7L12 2Z" fill="#191919" />
-                  <path d="M2 17L12 22L22 17" stroke="#191919" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                  <path d="M2 12L12 17L22 12" stroke="#191919" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                </svg>
-              </div>
-              <span className="text-xl font-bold">Cashly</span>
+              <img src="/white_cashly.png" alt="Cashly Logo" className="h-8 object-contain" />
             </div>
             <p className="text-white/50 text-sm max-w-xs">{t("landing.footer.tagline")}</p>
           </div>
 
           {/* Links */}
           <div>
-            <h4 className="font-semibold mb-4">{t("landing.footer.company")}</h4>
-            <ul className="space-y-2">
-              <li>
-                <a href="#" className="text-white/50 text-sm hover:text-white transition-colors">
-                  {t("landing.footer.aboutUs")}
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-white/50 text-sm hover:text-white transition-colors">
-                  {t("landing.footer.careers")}
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-white/50 text-sm hover:text-white transition-colors">
-                  {t("landing.footer.press")}
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div>
             <h4 className="font-semibold mb-4">{t("landing.footer.support")}</h4>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-white/50 text-sm hover:text-white transition-colors">
-                  {t("landing.footer.helpCenter")}
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-white/50 text-sm hover:text-white transition-colors">
+                <a href="/policy" className="text-white/50 text-sm hover:text-white transition-colors">
                   {t("landing.footer.termsOfService")}
                 </a>
               </li>
               <li>
-                <a href="#" className="text-white/50 text-sm hover:text-white transition-colors">
+                <a href="/policy" className="text-white/50 text-sm hover:text-white transition-colors">
                   {t("landing.footer.privacyPolicy")}
                 </a>
               </li>
