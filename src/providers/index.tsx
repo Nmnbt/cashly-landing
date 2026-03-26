@@ -8,8 +8,8 @@ export default function ProvidersWrapper() {
   return (
     <ThemeProvider
       attribute="class"
-      defaultTheme="system"
-      enableSystem
+      defaultTheme="dark"
+      forcedTheme="dark"
       disableTransitionOnChange
     >
       <I18nProvider>
