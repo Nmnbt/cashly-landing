@@ -59,7 +59,7 @@ export function Features() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-6">
           {features.map((feature, index) => (
             <div key={index} className={`glass-card rounded-2xl p-6 card-hover animate-slideUp ${feature.delay}`}>
               <div className="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mb-5">

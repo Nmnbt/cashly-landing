@@ -4,6 +4,7 @@ export { PhoneMockup } from "./PhoneMockup"
 export { Features } from "./Features"
 export { HowItWorks } from "./HowItWorks"
 export { Loyalty } from "./Loyalty"
+export { Rules } from "./Rules"
 export { CTA } from "./CTA"
 export { Footer } from "./Footer"
 

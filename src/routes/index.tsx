@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router"
-import { Navigation, Hero, Features, HowItWorks, Loyalty, CTA, Footer } from "@/components/landing"
+import { Navigation, Hero, Features, HowItWorks, Loyalty, Rules, CTA, Footer } from "@/components/landing"
 import "@/components/landing/landing.css"
 
 export const Route = createFileRoute("/")({
@@ -14,6 +14,7 @@ function App() {
       <Features />
       <HowItWorks />
       <Loyalty />
+      <Rules />
       <CTA />
       <Footer />
     </div>

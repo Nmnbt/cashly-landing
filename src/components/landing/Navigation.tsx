@@ -11,19 +11,22 @@ export function Navigation() {
           <img src="/white_cashly.png" alt="Cashly Logo" className="h-8 object-contain cursor-pointer hover:opacity-80 transition-opacity" />
         </Link>
         
-        <div className="hidden md:flex items-center gap-8 flex-1 justify-end">
+        {/* Nav Links (Right) */}
+        <div className="hidden md:flex items-center gap-8 flex-1 justify-end">          
           <a href="#features" className="text-white/70 hover:text-white transition-colors text-sm">
             {t("landing.nav.features")}
           </a>
-        </div>
-
-        {/* Nav Links (Right) */}
-        <div className="hidden md:flex items-center gap-8 flex-1 justify-start">
           <a href="#how-it-works" className="text-white/70 hover:text-white transition-colors text-sm">
             {t("landing.nav.howItWorks")}
           </a>
           <a href="#loyalty" className="text-white/70 hover:text-white transition-colors text-sm">
             {t("landing.nav.rewards")}
+          </a>
+          <a href="#rules" className="text-white/70 hover:text-white transition-colors text-sm">
+            {t("landing.nav.rules")}
+          </a>
+          <a href="/policy" className="text-white/70 hover:text-white transition-colors text-sm">
+            {t("landing.nav.policy")}
           </a>
         </div>
       </div>
